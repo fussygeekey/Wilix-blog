@@ -9,9 +9,17 @@ const Tag = ({ tagName }) => {
 };
 
 const Tags = ({ tags }) => {
+    if (!tags.lenght) {
+        return (
+            <p>
+                No tags
+            </p>
+        );
+    }
+
     return (
         <div className="d-flex flex-row mb-2 flex-wrap">
-            {tags.map(tag => <Tag key={Date().toString()} tagName={tag.name} />)}
+            {tags.map(tag => <Tag key={tag.id} tagName={tag.name} />)}
         </div>
     );
 };

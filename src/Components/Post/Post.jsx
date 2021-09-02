@@ -1,5 +1,3 @@
-import cutTheText from "../../Functionality/cutTheText";
-
 const Post = ({ post }) => {
     return (
         <div className="card mb-1">
@@ -8,7 +6,7 @@ const Post = ({ post }) => {
                     {post.title}
                 </h4>
                 <p className="card-text">
-                    {cutTheText(post.text, 165)}
+                    {post.text}
                 </p>
                 <button className="btn btn-primary">
                     Learn more

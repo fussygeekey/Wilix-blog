@@ -2,7 +2,8 @@ import { CREATE_POST } from './types';
 
 const initialState = {
     localPosts: [],
-    globalPosts: []
+    globalPosts: [],
+    tags: []
 };
 
 export const postsReducer = (state = initialState, action) => {

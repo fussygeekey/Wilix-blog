@@ -26,7 +26,7 @@ const NavBar = () => {
 
 const Header = () => {
     return (
-        <header className="shadow-sm">
+        <header className="shadow-sm mb-5 pt-2 pb-2">
             <div className="container d-flex justify-content-between align-items-center">
                 <Link to="/" className="text-decoration-none">
                     <h1 className="h1">

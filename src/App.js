@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <main className="container mt-3">
+      <main className="container">
         <Switch>
           <Route path="/login">
             <SignInPage />

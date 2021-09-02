@@ -1,19 +1,5 @@
 import Post from "../Post/Post";
 
-const OwnerData = props => {
-    return (
-        <div>
-            <img src="" alt="" />
-            <p>
-                {props.ownerName}
-            </p>
-            <p>
-                {props.publicationDate}
-            </p>
-        </div>
-    );
-};
-
 const GlobalFeedList = ({ posts }) => {
     if (!posts.length) {
         return (
@@ -25,7 +11,7 @@ const GlobalFeedList = ({ posts }) => {
 
     return (
         <ul>
-            {posts.map(post => <Post post={post} key={Date().toString()} />)}
+            {posts.map(post => <li><Post post={post} key={post.id} /></li>)}
         </ul>
     );
 };

@@ -24,7 +24,7 @@ const SignInForm = () => {
             }}
         >
             {({ isSubmitting }) => (
-                <Form>
+                <Form className="col-sm-5">
                     <label htmlFor="sign-up-email">
                         Email:
                     </label>

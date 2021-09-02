@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Post from "../Post/Post";
 
 const LocalFeedList = ({ posts }) => {
     if (!posts.length) {
@@ -11,7 +11,7 @@ const LocalFeedList = ({ posts }) => {
 
     return (
         <ul>
-            {/* {props.posts.map(i => <Post user={user[i]} />)} */}
+            {posts.map(post => <li><Post post={post} key={post.id} /></li>)}
         </ul>
     );
 };

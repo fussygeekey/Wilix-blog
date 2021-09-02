@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SignUpForm from '../../Components/SignUpForm/SignUpForm'
 
-export default () => {
+const SignUpPage = () => {
     return (
-        <React.Fragment>
+        <div className="d-flex flex-column">
             <h2>
                 Sign up
             </h2>
@@ -12,6 +12,8 @@ export default () => {
                 Have an account?
             </Link>
             <SignUpForm />
-        </React.Fragment>
+        </div>
     );
 };
+
+export default SignUpPage;
