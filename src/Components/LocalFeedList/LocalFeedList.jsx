@@ -2,13 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 import Post from "../Post/Post";
 
-const LocalFeedList = ({ posts, login }) => {
+const LocalFeedList = ({ posts }) => {
     return (
         <React.Fragment>
             <h2>
                 Local feed
             </h2>
-            {!posts.length || !login.redirectStatus ?
+            {!posts.length ?
                 <p>
                     No posts
                 </p>

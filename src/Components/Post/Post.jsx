@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
     return (
-        <li className="list-group-item mb-1">
+        <li className="list-group-item mb-3">
             <h4>
                 {post.title}
             </h4>

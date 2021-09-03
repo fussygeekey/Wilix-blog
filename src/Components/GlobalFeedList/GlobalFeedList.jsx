@@ -1,8 +1,18 @@
 import React from 'react';
-import { connect } from "react-redux";
+import { useEffect } from 'react';
+import { connect, useDispatch, useSelector } from "react-redux";
+import { fetchPosts } from '../../redux/actions';
 import Post from "../Post/Post";
 
-const GlobalFeedList = ({ posts }) => {
+const GlobalFeedList = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchPosts());
+    }, [dispatch]);
+
+    const posts = useSelector(state => state.posts.posts);
+
     return (
         <React.Fragment>
             <h2>

@@ -7,6 +7,7 @@ import Footer from './Components/Footer/Footer';
 import HomePage from './Pages/HomePage/HomePage';
 import SignInPage from './Pages/SignInPage/SignInPage';
 import SignUpPage from './Pages/SignUpPage/SignUpPage';
+import PostPage from './Pages/PostPage/PostPage'
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
           </Route>
           <Route path="/register">
             <SignUpPage />
+          </Route>
+          <Route path="/post">
+            <PostPage />
           </Route>
           <Route path="/">
             <HomePage />

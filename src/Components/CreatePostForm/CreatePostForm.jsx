@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
 import { createPost } from '../../redux/actions';
 
-const CreatePostForm = ({ createPost, login }) => {
-    if (!login) {
-        return null;
-    }
+const CreatePostForm = ({ createPost, isLogged }) => {
+    // if (!isLogged) {
+    //     return null;
+    // }
 
     return (
         < React.Fragment >
@@ -22,6 +22,7 @@ const CreatePostForm = ({ createPost, login }) => {
                     }
 
                     const newPost = {
+                        userId: 1,
                         id: Date.now().toString(),
                         title: values.heading,
                         text: values.text
